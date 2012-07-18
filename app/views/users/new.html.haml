@@ -1,0 +1,9 @@
+.row
+  .span4.offset3
+    = twitter_bootstrap_form_for @user, :url => signup_path, :html => { :class => 'form-horizontal' } do |f|
+      = f.fieldset 'Signup' do
+        = f.text_field :email
+        = f.password_field :password
+        = f.password_field :password_confirmation
+        = f.actions do
+          = f.submit 'Sign up'

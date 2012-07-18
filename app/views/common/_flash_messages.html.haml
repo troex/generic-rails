@@ -1,0 +1,5 @@
+- flash.each do |type, msg|
+  .alert{:class => 'alert-%s' % type}
+    %button.close{:data => {:dismiss => 'alert'}} ×
+    %strong= type.to_s.humanize + '!'
+    = msg

@@ -7,6 +7,7 @@ gem 'mysql2'
 gem 'sorcery'
 gem 'cancan'
 
+gem 'haml'
 gem 'jquery-rails'
 gem 'twitter_bootstrap_form_for', :git => 'git://github.com/troex/twitter_bootstrap_form_for.git', :branch => 'bootstrap-2.0'
 

@@ -1,0 +1,4 @@
+:javascript
+  var production = #{raw Rails.env.production?.to_json};
+  #{yield :js_global}
+  #{'$(document).ready(function() {\n' + (yield :js_ready) + '});' if content_for? :js_ready}

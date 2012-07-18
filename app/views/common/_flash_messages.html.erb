@@ -1,7 +1,0 @@
-<% flash.each do |type, msg| %>
-  <%#= rap [type, msg] %>
-  <div class="alert alert-<%= type %>">
-    <button class="close" data-dismiss="alert">×</button>
-    <strong><%= type.to_s.humanize %>!</strong> <%= msg %>
-  </div>
-<% end %>

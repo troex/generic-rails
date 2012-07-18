@@ -1,0 +1,10 @@
+.row
+  .span4.offset3
+    = twitter_bootstrap_form_for login_path, :html => { :class => 'form-horizontal' } do |f|
+      = f.fieldset 'Login' do
+        = f.text_field :email, :name => :email
+        = f.password_field :password, :name => :password
+        = f.label :remember_me do |l|
+          = l.check_box :remember_me, ''
+        = f.actions do
+          = f.submit 'Log in'
