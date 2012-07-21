@@ -60,3 +60,5 @@ module Simple
     config.assets.version = '1.0'
   end
 end
+$version = `git describe --tags`.chomp.sub('-', '.').sub(/\-\w+$/, '')
+
