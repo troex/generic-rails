@@ -19,4 +19,11 @@ module ApplicationHelper
   def icon(name, white = nil)
     content_tag :i, '', :class => 'icon-%s%s' % [name.to_s.tr('_', '-'), (white.nil? ? '' : ' icon-white')]
   end
+
+  def header(text, small = nil?)
+    if small
+      text << ' ' << content_tag(:small, small)
+    end
+    content_tag :div, content_tag(:h1, text.html_safe), :class => 'page-header'
+  end
 end
